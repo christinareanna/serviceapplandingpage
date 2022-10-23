@@ -2,6 +2,7 @@ import React from "react";
 import ServiceWorkers from "../images/serviceworkers1.jpg";
 import RestaurantWorker from "../images/restaurantworker.jpg";
 import { BsFillPauseCircleFill } from "react-icons/bs"
+import Sidebar from "./sidebar";
 export default function LandingPage() {
 
     return (
@@ -19,6 +20,7 @@ export default function LandingPage() {
                         </ul>
                     </nav>
                 </header>
+                <Sidebar />
             </div>
             <div className="container">
                 <img src={ServiceWorkers} className="service-workers" alt="workers" />
@@ -32,7 +34,7 @@ export default function LandingPage() {
                 </div>
                 <img src={RestaurantWorker} className="service-workers" alt="restaurant worker" />
             </div>
-            
+
             {/* Not sure whether to keep or not */}
 
             {/* <div className="container-3">
