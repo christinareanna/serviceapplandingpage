@@ -1,27 +1,13 @@
 import React from "react";
 import ServiceWorkers from "../images/serviceworkers1.jpg";
 import RestaurantWorker from "../images/restaurantworker.jpg";
-import { BsFillPauseCircleFill } from "react-icons/bs"
-import Sidebar from "./sidebar";
+import NavBar from "./navbar";
+
 export default function LandingPage() {
 
     return (
         <div>
-            <div className="header-container">
-                <header className="header">
-                    <div className="logo"><BsFillPauseCircleFill size={70} />
-                        <h1>PAUSE.</h1>
-                    </div>
-                    <nav>
-                        <ul className="nav-list">
-                            <li>About</li>
-                            <li>Events</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                </header>
-                <Sidebar />
-            </div>
+            <NavBar />
             <div className="container">
                 <img src={ServiceWorkers} className="service-workers" alt="workers" />
                 <div className="text">

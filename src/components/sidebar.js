@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaBars, FaWindowClose } from 'react-icons/fa';
 
 
@@ -12,13 +12,13 @@ const Sidebar = () => {
         return isSidebarShowing ? (
             <div className="close-container">
                 <button className="close" onClick={toggle}>
-                    <FaWindowClose size={30}/>
+                    <FaWindowClose size={30} />
                 </button>
             </div>
         ) : (
             <div className="bars-container">
                 <button className="bars" onClick={toggle}>
-                    <FaBars size={30}/>
+                    <FaBars size={30} />
                 </button>
             </div>
         )
@@ -30,14 +30,15 @@ const Sidebar = () => {
             <div className="sidebar-container">
                 <div>
                     <div aria-label="About" id="about">
-                        <button to="/about" className="about-button" onClick={toggle}>About</button>
+                        <Link to="/about" className="about-button" onClick={toggle}>About</Link>
                     </div>
                     <div aria-label="Events" id="events">
-                        <button to="/events" className="events-button" onClick={toggle}>Events</button>
+                        <Link to="/events" className="events-button" onClick={toggle}>Events</Link>
                     </div>
                     <div aria-label="Contact" id="contact">
-                        <button to="/contact" className="contact-button" onClick={toggle}>Contact</button>
+                        <Link to="/contact" className="contact-button" onClick={toggle}>Contact</Link>
                     </div>
+                    <button className="login">Log in</button>
                 </div>
             </div>
         ) : null

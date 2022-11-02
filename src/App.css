@@ -10,8 +10,22 @@
 
 .logo {
   color: gold;
+  cursor: pointer;
+  margin: 1rem;
 }
 
+.login {
+  padding: 10px;
+  margin: 4px 2px;
+  text-align: center;
+  background-color: gold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  text-decoration: none;
+  border-radius: 12px;
+  width: 100px;
+}
 
 /* .header-container {
   width: 100%;
@@ -32,6 +46,7 @@ header {
 
 header h1 {
   display: inline-block;
+  cursor: pointer;
   /* margin-left: 1rem; */
   /* margin-left: 5rem; */
   font-size: 2rem;
@@ -44,12 +59,31 @@ nav {
   display: inline-block;
 }
 
-nav li {
+nav ul {
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+/* nav links */
+.about {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+
+.events {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
 }
 
 .container {
@@ -120,6 +154,19 @@ nav li {
   height: 200px;
 } */
 
+.information {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: lightgrey;
+  border-radius: 20px;
+  font-size: clamp(0.8rem, 2.5vw, 2rem);
+  padding: 0.5rem;
+}
+
+.form {
+  
+}
+
 .service-workers {
   width: 50%;
   height: auto;
@@ -177,29 +224,39 @@ nav li {
 
   .about-button {
     color: white;
+    display: inline-block;
+    padding: 20px 0;
+    position: relative;
+    text-decoration: none;
     background-color: black;
     width: 100%;
     font-size: 1.5rem;
     border: none;
-    margin: 1rem 0;
+
   }
 
   .events-button {
     color: white;
+    display: inline-block;
+    padding: 20px 0;
+    position: relative;
+    text-decoration: none;
     background-color: black;
     width: 100%;
     font-size: 1.5rem;
     border: none;
-    margin: 1rem 0;
   }
 
   .contact-button {
     color: white;
+    display: inline-block;
+    position: relative;
+    padding: 20px 0;
+    text-decoration: none;
     background-color: black;
     width: 100%;
     font-size: 1.5rem;
     border: none;
-    margin: 1rem 0;
   }
 }
 
