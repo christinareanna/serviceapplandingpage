@@ -17,7 +17,7 @@ export default function NavBar() {
                         <Link to="/about" className="about">About</Link>
                         <Link to="/events" className="events">Events</Link>
                         <Link to="/contact" className="contact">Contact</Link>
-                        <button className="login">Login</button>
+                        <Link to="/login" className="login"><button className="login">Login</button></Link>
                     </ul>
                 </nav>
             </header>

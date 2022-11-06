@@ -38,7 +38,7 @@ const Sidebar = () => {
                     <div aria-label="Contact" id="contact">
                         <Link to="/contact" className="contact-button" onClick={toggle}>Contact</Link>
                     </div>
-                    <button className="login">Log in</button>
+                    <Link to="/login" className="login" onClick={toggle}><button className="login">Log in</button></Link>
                 </div>
             </div>
         ) : null

@@ -1,6 +1,7 @@
 import React from "react";
 // import Sidebar from "./sidebar";
 import NavBar from "./navbar";
+import Communicate from "../images/communicating.jpg";
 
 export default function About() {
 
@@ -9,9 +10,12 @@ export default function About() {
             <NavBar />
             {/* <Sidebar /> */}
             <h1>About</h1>
-            <div className="information">
-                <h2><strong>Pause</strong> is a great way to meet other people who work in similar industries that you might not have been able to meet otherwise. <br/>
-                <br/>From events, to being able to see others who work nearby you, the opportunities to build a community has never been easier.</h2>
+            <div className="about-info">
+                <img src={Communicate} className="people-talking" alt="communicating" />
+                <p><strong>Pause</strong> is a great way to meet other people who work in similar industries that you might not have been able to meet otherwise.
+                    From events, to being able to see others who work nearby you, the opportunities to build a community are simple with Pause.</p>
+            </div>
+            <div>
             </div>
         </>
     )

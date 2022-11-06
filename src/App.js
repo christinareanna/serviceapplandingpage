@@ -3,6 +3,7 @@ import LandingPage from './components/landingpage';
 import About from './components/about';
 import Events from './components/events';
 import Contact from './components/contact';
+import LogIn from './components/login';
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/about' element={<About />}></Route>
           <Route exact path='/events' element={<Events />}></Route>
           <Route exact path='/contact' element={<Contact />}></Route>
+          <Route exact path='/login' element={<LogIn />}></Route>
         </Routes>
       </div>
     </Router>

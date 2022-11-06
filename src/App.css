@@ -14,7 +14,8 @@
   margin: 1rem;
 }
 
-.login {
+.login button {
+  cursor: pointer;
   padding: 10px;
   margin: 4px 2px;
   text-align: center;
@@ -155,21 +156,42 @@ nav ul {
 } */
 
 .information {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin: 2rem;
   background-color: lightgrey;
   border-radius: 20px;
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
-  padding: 0.5rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  padding: 2rem;
 }
 
-.form {
-  
+.about-info {
+  margin: 2rem;
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
 }
+
+.about-info p {
+  width: 50%;
+  height: auto;
+  padding: 30% 1rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* .form {
+  
+} */
 
 .service-workers {
   width: 50%;
   height: auto;
+  object-fit: cover;
+}
+
+.people-talking {
+  width: 50%;
+  height: auto;
+  display: flex;
   object-fit: cover;
 }
 
@@ -257,6 +279,20 @@ nav ul {
     width: 100%;
     font-size: 1.5rem;
     border: none;
+  }
+
+  .about-info {
+    width: auto;
+    display: block;
+  }
+
+  .about-info p {
+    width: 100%;
+  }
+
+  .people-talking {
+    width: 100%;
+    height: auto;
   }
 }
 
