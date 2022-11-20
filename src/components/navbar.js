@@ -10,7 +10,7 @@ export default function NavBar() {
         <div className="header-container">
             <header className="header">
                 <div className="logo" onClick={() => navigate('/')}><BsFillPauseCircleFill size={70} />
-                    <h1 onClick={() => navigate('/')}>PAUSE.</h1>
+                    <h1 onClick={() => navigate('/')}>Clock Out Crew.</h1>
                 </div>
                 <nav>
                     <ul className="nav-list">
